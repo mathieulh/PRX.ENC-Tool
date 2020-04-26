@@ -2,8 +2,9 @@
 As the name implies this project allows the decryption of PRX.ENC files from Sony JIG Memory sticks
 
 
-Modify unsigned char ms_id[] accordingly, to dump the MS ID Please https://github.com/mathieulh/Dump-MemoryStick-ID 
-use the MSID is stored at 0x1E0 in the dump (attr0.bin file)
+Modify unsigned char ms_id[] accordingly, to dump the MS ID Please use https://github.com/mathieulh/Dump-MemoryStick-ID 
+
+The MSID is stored at 0x1E0 in the dump (attr0.bin file)
 
 Decrypting the JIG OS2 file often found on JIG memory sticks require the use of https://github.com/mathieulh/Decrypt-JIG-OS2
 
