@@ -6,7 +6,7 @@ Modify unsigned char ms_id[] accordingly, to dump the MS ID Please use https://g
 
 The MSID is stored at 0x1E0 in the dump (attr0.bin file)
 
-Decrypting the JIG OS2 file often found on JIG memory sticks require the use of https://github.com/mathieulh/Decrypt-JIG-OS2
+Decrypting the JIG OS2 file often found on JIG memory sticks requires the use of https://github.com/mathieulh/Decrypt-JIG-OS2
 
 The PSP folder contains a version meant to run on PSP, the PC folder contains a version of this tool meant to run on PC.
 
