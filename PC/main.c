@@ -187,8 +187,8 @@ int Decrypt(unsigned char* buf, int size, unsigned char* msp_id, int* unk2, int*
 	//stage 6
 	//===================================================================================
 	tmp_ptr = buf+0x14;
-	WriteFile("tmp_ptr.bin", tmp_ptr, 0x40);
-	WriteFile("msp_id.bin", msp_id, 0x10);
+//	WriteFile("tmp_ptr.bin", tmp_ptr, 0x40);
+//	WriteFile("msp_id.bin", msp_id, 0x10);
 	for (i = 0; i < 0x10; i++)
 	{
 		if (tmp_ptr[i] != msp_id[i])
@@ -198,7 +198,7 @@ int Decrypt(unsigned char* buf, int size, unsigned char* msp_id, int* unk2, int*
 		}
 	} 
 	
-	WriteFile("buf_pre_memcpy.bin", buf, 0x300);
+//	WriteFile("buf_pre_memcpy.bin", buf, 0x300);
  
 	//memcpy(buf+0x30, buf+0x4, 0x80);
 	for (i = 0x7F; i >= 0; i--)
@@ -209,7 +209,7 @@ int Decrypt(unsigned char* buf, int size, unsigned char* msp_id, int* unk2, int*
 	memcpy(buf+0x40, buf+0x30, 0x10);
 	memcpy(unk2, buf+0xd0, 0x80);
 
-	WriteFile("buf_pre_kirk.bin", buf, 0x300);
+//	WriteFile("buf_pre_kirk.bin", buf, 0x300);
 	//hexDump(buf,0x300);
 	unsigned char * size_buf = buf+0xb0;
 	unsigned int size_ = size_buf[0] | (size_buf[1] << 8) | (size_buf[2] << 16) | (size_buf[3] << 24);
